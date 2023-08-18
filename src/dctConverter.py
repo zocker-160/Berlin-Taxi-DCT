@@ -100,8 +100,12 @@ def dct2png(file: str, name: str, dstFolder: str):
     mode = "RGBA" if dct.bpp == 32 else "RGB"
     image = Image.frombytes(mode, (dct.xRes, dct.yRes), dct.toBytes())
 
-    b, g, r = image.split()
-    image = Image.merge("RGB", (r, g, b))
+    if dct.bpp == 24:
+        b, g, r = image.split()
+        image = Image.merge(mode, (r, g, b))
+    else:
+        b, g, r, a = image.split()
+        image = Image.merge(mode, (r, g, b, a))
 
     image.save(os.path.join(dstFolder, name+".png"))
 
