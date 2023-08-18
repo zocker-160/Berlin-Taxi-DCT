@@ -139,7 +139,7 @@ def main():
     try:
         sourcefile = sys.argv[1]
         dstFolder = sys.argv[2]
-    except KeyError:
+    except IndexError:
         print("usage: dctconverter <imagefile> <destfolder>")
         exit()
 
