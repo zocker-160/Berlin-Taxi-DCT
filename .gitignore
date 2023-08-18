@@ -1,0 +1,12 @@
+venv/
+.directory
+
+debug.py
+
+*.dct
+*.DCT
+special4.png
+
+*.ods
+*.csv
+*.rehex*
