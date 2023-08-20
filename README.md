@@ -1,6 +1,6 @@
-# Berlin-Taxi-DCT
+# DCT image file converter for Berlin Taxi / Taxi Challenge Berlin
 
-Script to convert DCT texture files used in Berlin Taxi.
+Script to convert DCT texture files used in Berlin Taxi / Taxi Challenge Berlin.
 
 ## Usage
 ```bash
