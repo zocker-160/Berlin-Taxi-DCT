@@ -10,3 +10,6 @@ debug.py
 *.ods
 *.csv
 *.rehex*
+
+*.exe
+*.bin
