@@ -107,6 +107,12 @@ def dct2png(file: str, name: str, dstFolder: str):
         b, g, r, a = image.split()
         image = Image.merge(mode, (r, g, b, a))
 
+#    print("MODE:", mode)
+#    print(dct.xRes, dct.yRes)
+#    with open(f"{name}.{mode}", "wb") as f:
+#        #f.write(dct.toBytes())
+#        f.write(image.tobytes())
+
     image.save(os.path.join(dstFolder, name+".png"))
 
 
